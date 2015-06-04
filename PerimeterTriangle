@@ -1,0 +1,8 @@
+public class PerimeterTriangle extends Triangle {
+
+    public  PerimeterTriangle(int a, int b, int c){
+        super (a, b, c);
+
+    }
+
+}
