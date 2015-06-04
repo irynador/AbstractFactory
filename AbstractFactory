@@ -1,0 +1,12 @@
+public class AbstractFactory {
+    public static BaseFactory getFactory (String factoryType){
+        if (factoryType.equals("Area")) {
+            return new AreaFactory();
+        }
+        if (factoryType.equals("Perimeter")) {
+            return new PerimeterFactory();
+        }
+
+        return null;
+    }
+}
