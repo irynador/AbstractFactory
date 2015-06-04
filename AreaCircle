@@ -1,0 +1,4 @@
+ public class AreaCircle extends Circle {
+    public AreaCircle(int r){
+        super(r);
+    }
