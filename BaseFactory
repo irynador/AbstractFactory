@@ -1,0 +1,4 @@
+public interface BaseFactory {
+    Circle createCircle(int r);
+    Triangle createTriangle(int a, int b, int c);
+}
