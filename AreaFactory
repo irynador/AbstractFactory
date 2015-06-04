@@ -1,0 +1,9 @@
+public class AreaFactory implements BaseFactory {
+    public Circle createCircle(int r) {
+        return new AreaCircle(r);
+    }
+
+    public Triangle createTriangle(int a, int b, int c){
+        return new AreaTriangle(a, b, c);
+    }
+}
