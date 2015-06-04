@@ -1,0 +1,20 @@
+public abstract class Triangle implements Figure{
+    private  int a, b, c;
+    public Triangle(int a, int b, int c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    public double getAreaValue(){
+
+        int p = (a + b + c)/2;
+        double s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        System.out.println("Area of Triangle is " + s);
+        return s;
+    }
+    public double getPerimeterValue() {
+        int P = a + b + c;
+        System.out.println("Perimeter of Triangle is " + P);
+        return  P;
+    }
+}
