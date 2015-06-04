@@ -1,0 +1,20 @@
+public class AbstractFactoryTest {
+    public static void main(String[] args) {
+        BaseFactory areaFactory = AbstractFactory.getFactory("Area");
+        Circle circle = areaFactory.createCircle(5);
+        circle.getAreaValue();
+
+        BaseFactory areaFactory1 = AbstractFactory.getFactory("Area");
+        Triangle triangle = areaFactory1.createTriangle(3, 4, 5);
+        triangle.getAreaValue();
+
+        BaseFactory perFactory = AbstractFactory.getFactory("Perimeter");
+        Circle circle2 = perFactory.createCircle(2);
+        circle2.getPerimeterValue();
+
+        BaseFactory perFactory2 = AbstractFactory.getFactory("Perimeter");
+        Triangle triangle1 = perFactory2.createTriangle(3, 4, 5);
+        triangle1.getPerimeterValue();
+
+    }
+}
