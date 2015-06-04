@@ -1,0 +1,19 @@
+public abstract class Circle implements Figure{
+    private int r;
+    public Circle(int r){
+        this.r = r;
+    }
+
+    public double getAreaValue(){
+        double s = Math.PI * Math.pow(r, 2);
+        System.out.println("Area of Circle is " + s);
+        return s;
+    }
+
+    public double getPerimeterValue(){
+        double p = 2 * Math.PI * r;
+        System.out.println("Perimeter of Circle is " + p);
+        return p;
+    }
+
+}
