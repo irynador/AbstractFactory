@@ -1,0 +1,10 @@
+public class AreaTriangle extends Triangle {
+
+   public  AreaTriangle(int a, int b, int c){
+       super (a, b, c);
+
+   }
+
+
+
+}
