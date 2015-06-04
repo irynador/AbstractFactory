@@ -1,0 +1,7 @@
+public class PerimeterCircle extends Circle {
+
+    public PerimeterCircle(int r){
+        super(r);
+    }
+
+}
